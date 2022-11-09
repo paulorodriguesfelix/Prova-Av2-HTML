@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 05</title>
+</head>
+<body>
+    <h1>LANCHONETE</h1>
+    <h2>MENU</h2>
+    <table border = "1">
+        <tr>
+            <th colspan="1">LANCHE</th>
+            <th>PREÇO</th>
+        </tr>
+        <tr>
+            
+            <td>Hot Dog</td>
+            <td>R$ 1,00</td>
+        </tr>
+	    <tr>
+            
+            <td>Hambúrguer</td> 
+            <td>R$1,30</td>
+        </tr>
+        <tr>
+            <td>Cheeseburguer</td>
+            <td>R$ 1,50</td>
+        </tr>
+        <tr>
+            <td>Refrigerante lt</td>
+            <td>R$ 1,00</td>
+        </tr>
+        <tr>
+            <td>Batata Frita</td>
+            <td>R$ 0,80</td>
+        </tr>
+    </table>
+    <button onclick="lanchonete()">FAZER PEDIDO</button>
+    <div id="rst"></div>
+
+    <script>
+        function lanchonete(){
+
+            let nome = prompt("Digite seu nome:")
+            let hotdog = prompt("Quantos Hot Dog?")
+            let hamburg = prompt("Quantos Hamburguers?")
+            let chessbur = prompt("Quantos cheeseburguers?")
+            let refrig = prompt("Quantos Refrigerantes?")
+            let batata = prompt("Quantas Batatas Fritas?")
+            let hot = 1 * Number(hotdog)
+            let hamb = 1.30 * Number(hamburg)
+            let chees = 1.50 * Number(chessbur)
+            let refr = 1. * Number(refrig)
+            let bata = 0.80 * Number(batata)
+            let total = hot + hamb + chees + refr + bata
+            let msg = nome +" O valor total do pedido é: R$ "+ total + " reais"
+
+            alert(msg);
+            document.getElementById("rst").innerHTML = msg;
+        
+        }
+    </script>
+    
+</body>
+</html>
