@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 03</title>
+</head>
+<body>
+
+    <script>
+       let nomeLoja = prompt("Digite o nome da Loja: ")
+       let jan = prompt("Digite o valor de vendas referente ao mês de Janeiro: ")
+       let fev = prompt("Digite o valor de vendas referente ao mês de Fevereiro:")
+       let mar = prompt("Digite o valor de vendas referente ao mês de Março: ")
+       let abr = prompt("Digite o valor de vendas referente ao mês de Abril: ")
+       let mai = prompt("Digite o valor de vendas referente ao mês de Maio: ")
+       let jun = prompt("Digite o valor de vendas referente ao mês de Junho: ")
+       let jul = prompt("Digite o valor de vendas referente ao mês de Julho: ")
+       let ago = prompt("Digite o valor de vendas referente ao mês de Agosto: ")
+       let set = prompt("Digite o valor de vendas referente ao mês de Setembro: ")
+       let out = prompt("Digite o valor de vendas referente ao mês de Outubro: ")
+       let nov = prompt("Digite o valor de vendas referente ao mês de Novembro: ")
+       let dez = prompt("Digite o valor de vendas referente ao mês de Dezembro: ")
+       let totalAno = Number(jan) + Number(fev) + Number(mar) + Number(abr) + Number(mai) + Number(jun) + Number(jul) + Number(ago) + Number(set) + Number(out) + Number(nov) + Number(dez) 
+       let primSeme = Number(jan) + Number(fev) + Number(mar) + Number(abr) + Number(mai) + Number(jun)
+       let segunSeme = Number(jul) + Number(ago) + Number(set) + Number(out) + Number(nov) + Number(dez)
+
+        document.write("NOME DA LOJA: "+nomeLoja + "<br>")
+       document.write("VALOR TOTAL DE VENDAS NO ANO: R$ " + totalAno + "<br>")
+       document.write("VALOR DE VENDAS NO PRIMEIRO SEMESTRE: R$ "+ primSeme + "<br>")
+       document.write("VALOR DE VENDAS NO SEGUNDO SEMESTRE: R$ "+ segunSeme)
+
+       
+       
+    
+    </script>
+    
+</body>
+</html>
